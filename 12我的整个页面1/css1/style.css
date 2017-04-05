@@ -1,0 +1,594 @@
+@import url("reset.css");
+.spc-14 {
+  font-size: 14px;
+  color: blue; }
+
+.spc-18 {
+  font-size: 18px;
+  color: red; }
+
+.spc-22 {
+  font-size: 22px;
+  color: green; }
+
+html {
+  font-size: 62.5%; }
+
+html,
+body,
+.full {
+  width: 100%;
+  height: 100%;
+  background: none; }
+
+.full {
+  display: flex;
+  flex-direction: column; }
+  .full header {
+    width: 100%;
+    height: 4.1rem;
+    background: #4194f0;
+    display: flex;
+    flex-direction: row; }
+    .full header h3 {
+      line-height: 4.5rem; }
+      .full header h3 img {
+        width: 1.95rem;
+        height: 1.65rem;
+        background: none;
+        margin-left: 1.5rem; }
+    .full header div {
+      flex: 1;
+      line-height: 4.1rem;
+      font-size: 1.5rem;
+      margin-left: 1rem;
+      color: white; }
+  .full .One {
+    width: 100%;
+    height: 6.7rem;
+    background: #4194f0; }
+    .full .One dl {
+      display: flex;
+      flex-direction: row; }
+      .full .One dl dt img {
+        width: 5rem;
+        height: 5rem;
+        background: none;
+        margin-left: 1.5rem; }
+      .full .One dl dd {
+        flex: 1;
+        width: 100%;
+        height: auto;
+        background: none;
+        position: relative;
+        margin: 0rem 1rem; }
+        .full .One dl dd p {
+          position: absolute;
+          left: 0;
+          top: 1rem;
+          width: 12rem;
+          height: 3rem;
+          background: none; }
+          .full .One dl dd p img {
+            width: 3.5rem;
+            height: 2rem;
+            background: none; }
+        .full .One dl dd h3 {
+          position: absolute;
+          top: 2.8rem;
+          color: #fff;
+          font-size: 1.5rem; }
+        .full .One dl dd .One-right {
+          position: absolute;
+          right: 0;
+          top: 1rem; }
+          .full .One dl dd .One-right img {
+            width: 2.3rem;
+            height: 2.3rem;
+            background: none; }
+  .full .Two {
+    width: 100%;
+    height: 3.4rem;
+    background: #fff;
+    border-bottom: 3px solid #999999;
+    text-align: center; }
+    .full .Two span {
+      font-size: 1.4rem;
+      display: inline-block;
+      width: 32%;
+      height: auto;
+      background: none;
+      text-align: center;
+      line-height: 3.4rem; }
+      .full .Two span a {
+        color: #000000; }
+    .full .Two span:hover {
+      display: inline-block;
+      color: #3586E1;
+      border-bottom: 3px solid #3586E1; }
+  .full section {
+    position: relative;
+    overflow: auto;
+    flex: 1;
+    background: #EEECED; }
+    .full section::-webkit-scrollbar {
+      width: 0; }
+    .full section .start {
+      width: 100%;
+      height: auto;
+      background: none; }
+      .full section .start .Imagess {
+        border-top: 1px solid #ededed;
+        border-bottom: 1px solid #ededed;
+        margin-top: 1rem;
+        padding-left: 1.5rem;
+        padding-right: 1rem;
+        width: auto;
+        height: auto;
+        background: #fff; }
+        .full section .start .Imagess .shoper-imagess {
+          width: 100%;
+          height: 4rem;
+          background: #fff;
+          padding-top: 1.2rem; }
+          .full section .start .Imagess .shoper-imagess p {
+            border-left: 0.3rem solid #4194f0;
+            padding-left: 0.4rem; }
+        .full section .start .Imagess .shoper-content {
+          display: flex;
+          flex-direction: row;
+          width: 100%;
+          height: 4.9rem;
+          background: none;
+          border-top: 1px solid #e5e9ec;
+          padding-top: 1.2rem; }
+          .full section .start .Imagess .shoper-content span {
+            display: block;
+            width: 5rem;
+            height: auto;
+            background: none; }
+          .full section .start .Imagess .shoper-content b {
+            flex: 1;
+            margin-left: 1.1rem;
+            width: 100%;
+            height: auto;
+            background: none; }
+      .full section .start .Three_3 {
+        width: 100%;
+        height: 6.2rem;
+        background: #fff; }
+        .full section .start .Three_3 dl {
+          display: flex;
+          flex-direction: row; }
+          .full section .start .Three_3 dl dt {
+            width: 40%;
+            height: 5rem;
+            background: none;
+            border-right: 1px solid #999999;
+            margin-top: 0.5rem;
+            text-align: center; }
+            .full section .start .Three_3 dl dt a:nth-of-type(1) {
+              color: #FCAA3A;
+              font-size: 1.6rem; }
+            .full section .start .Three_3 dl dt a:nth-of-type(2) {
+              color: #676767; }
+            .full section .start .Three_3 dl dt a:nth-of-type(3) {
+              color: #999999; }
+          .full section .start .Three_3 dl dd {
+            flex: 1; }
+            .full section .start .Three_3 dl dd span {
+              display: inline-block;
+              margin: 0.8rem 15%; }
+              .full section .start .Three_3 dl dd span img {
+                width: 5rem;
+                height: 1rem;
+                background: none; }
+              .full section .start .Three_3 dl dd span a {
+                color: #FCAA3A; }
+      .full section .start .Four_3 {
+        margin-top: 1rem;
+        width: 100%;
+        height: 6.9rem;
+        background: #fff;
+        display: flex;
+        flex-direction: row; }
+        .full section .start .Four_3 .l {
+          width: 20%;
+          height: auto;
+          background: #fff; }
+          .full section .start .Four_3 .l img {
+            width: 3.2rem;
+            height: 3.2rem;
+            background: #fff;
+            margin: 1rem; }
+        .full section .start .Four_3 .c {
+          flex: 1;
+          margin-top: 1rem; }
+          .full section .start .Four_3 .c img {
+            width: 5.2rem;
+            height: 1.4rem;
+            background: none; }
+        .full section .start .Four_3 .r {
+          margin: 1rem; }
+    .full section .Three_1 {
+      display: flex;
+      flex-direction: row; }
+      .full section .Three_1 span {
+        width: 6.8rem;
+        height: 5.6rem;
+        background: none;
+        text-align: center;
+        line-height: 5.6rem;
+        color: #4194F0;
+        display: inline-block; }
+      .full section .Three_1 ul {
+        flex: 1;
+        width: 100%;
+        height: 3.3rem;
+        background: #f5f5f5;
+        display: inline-block;
+        border-left: 5px solid #B4B4B4;
+        overflow: hidden;
+        margin-top: 0.1rem; }
+        .full section .Three_1 ul li {
+          float: left;
+          width: 4rem;
+          height: 2.2rem;
+          background: none;
+          border: 1px solid #B4B4B4;
+          margin: 0.5rem 0.4rem;
+          text-align: center;
+          line-height: 2.2rem;
+          border-radius: 30px; }
+        .full section .Three_1 ul li:nth-child(1) {
+          color: white;
+          background: #4194F0; }
+    .full section .Four_1 {
+      display: flex;
+      flex-direction: row;
+      position: relative; }
+      .full section .Four_1 ul {
+        position: absolute; }
+        .full section .Four_1 ul li {
+          width: 6.85rem;
+          height: 7rem;
+          background: #f5f5f5;
+          text-align: center;
+          line-height: 7rem;
+          border-bottom: 1px solid #EBEBEB;
+          font-size: 1.4rem; }
+      .full section .Four_1 dl {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 8rem;
+        background: none;
+        border-bottom: 1px solid #CCCCCC;
+        margin: -2.3rem 1rem 0 6.8rem; }
+        .full section .Four_1 dl .m {
+          width: 3rem;
+          height: 3rem;
+          background: none;
+          position: absolute; }
+        .full section .Four_1 dl dt {
+          width: 6.5rem;
+          height: auto;
+          background: none; }
+          .full section .Four_1 dl dt img {
+            width: 5rem;
+            height: 5rem;
+            background: none;
+            margin: 1rem; }
+        .full section .Four_1 dl dd {
+          flex: 1;
+          width: 5rem;
+          height: 6rem;
+          background: none; }
+          .full section .Four_1 dl dd a {
+            display: block;
+            font-size: 1.4rem;
+            font-weight: bold;
+            margin-top: 1rem; }
+          .full section .Four_1 dl dd span {
+            display: block;
+            color: #B4B4B4;
+            margin-top: 0.2rem;
+            position: relative; }
+            .full section .Four_1 dl dd span img {
+              width: 1.5rem;
+              height: auto;
+              background: none;
+              margin-left: 0.1rem;
+              position: absolute;
+              right: 1rem; }
+            .full section .Four_1 dl dd span b {
+              margin-left: 0.1rem;
+              color: #000; }
+            .full section .Four_1 dl dd span strong {
+              color: #F85453; }
+            .full section .Four_1 dl dd span s {
+              color: #CCCCCC; }
+      .full section .Four_1 div {
+        position: absolute;
+        top: 4rem;
+        left: 8rem; }
+        .full section .Four_1 div span:nth-child(1) {
+          border: 1px solid #FF7F11;
+          color: #FF7F11;
+          display: inline-block; }
+        .full section .Four_1 div span:nth-of-type(2) {
+          display: inline-block;
+          background: #FF7F11;
+          color: white;
+          border: 1px solid #FF7F11; }
+    .full section .Five_1 {
+      width: 70%;
+      height: 7.3rem;
+      background: none;
+      border-bottom: 1px solid #CCCCCC;
+      position: absolute;
+      left: 7rem;
+      top: 14.6rem; }
+      .full section .Five_1 dl {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 7.3rem;
+        background: none; }
+        .full section .Five_1 dl dt img {
+          width: 5rem;
+          height: 5rem;
+          background: none;
+          margin: 1rem; }
+        .full section .Five_1 dl dd {
+          flex: 1; }
+          .full section .Five_1 dl dd a {
+            font-size: 1.3rem;
+            font-weight: bold;
+            display: block;
+            margin-top: 1rem; }
+          .full section .Five_1 dl dd span {
+            color: #B4B4B4;
+            display: block;
+            margin-top: 0.3rem; }
+            .full section .Five_1 dl dd span strong {
+              color: #F66060;
+              font-size: 1.5rem; }
+            .full section .Five_1 dl dd span img {
+              width: 1.5rem;
+              height: auto;
+              background: none;
+              float: right;
+              position: relative;
+              right: 1rem; }
+    .full section .six_1 {
+      width: 70%;
+      height: 7.3rem;
+      background: none;
+      border-bottom: 1px solid #CCCCCC;
+      position: absolute;
+      left: 7rem;
+      top: 21.9rem; }
+      .full section .six_1 dl {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 7.3rem;
+        background: none; }
+        .full section .six_1 dl dt img {
+          width: 5rem;
+          height: 5rem;
+          background: none;
+          margin: 1rem; }
+        .full section .six_1 dl dd {
+          flex: 1; }
+          .full section .six_1 dl dd a {
+            font-size: 1.3rem;
+            font-weight: bold;
+            display: block;
+            margin-top: 1rem; }
+          .full section .six_1 dl dd span {
+            color: #B4B4B4;
+            display: block;
+            margin-top: 0.3rem; }
+            .full section .six_1 dl dd span strong {
+              color: #F66060;
+              font-size: 1.5rem; }
+            .full section .six_1 dl dd span img {
+              width: 1.5rem;
+              height: auto;
+              background: none;
+              float: right;
+              margin-right: 0.8rem; }
+    .full section .seven_1 {
+      width: 70%;
+      height: 7.3rem;
+      background: none;
+      border-bottom: 1px solid #CCCCCC;
+      position: absolute;
+      left: 7rem;
+      top: 29.5rem; }
+      .full section .seven_1 dl {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 7.3rem;
+        background: none; }
+        .full section .seven_1 dl dt img {
+          width: 5rem;
+          height: 5rem;
+          background: none;
+          margin: 1rem; }
+        .full section .seven_1 dl dd {
+          flex: 1; }
+          .full section .seven_1 dl dd a {
+            font-size: 1.3rem;
+            font-weight: bold;
+            display: block;
+            margin-top: 1rem; }
+          .full section .seven_1 dl dd span {
+            color: #B4B4B4;
+            display: block;
+            margin-top: 0.3rem; }
+            .full section .seven_1 dl dd span strong {
+              color: #F66060;
+              font-size: 1.5rem; }
+            .full section .seven_1 dl dd span img {
+              width: 1.5rem;
+              height: auto;
+              background: none;
+              float: right;
+              margin-right: 0.8rem; }
+    .full section .eight_1 {
+      width: 70%;
+      height: 7.3rem;
+      background: none;
+      border-bottom: 1px solid #CCCCCC;
+      position: absolute;
+      left: 7rem;
+      top: 37.3rem; }
+      .full section .eight_1 dl {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 7.3rem;
+        background: none; }
+        .full section .eight_1 dl dt img {
+          width: 5rem;
+          height: 5rem;
+          background: none;
+          margin: 1rem; }
+        .full section .eight_1 dl dd {
+          flex: 1; }
+          .full section .eight_1 dl dd a {
+            font-size: 1.3rem;
+            font-weight: bold;
+            display: block;
+            margin-top: 1rem; }
+          .full section .eight_1 dl dd span {
+            color: #B4B4B4;
+            display: block;
+            margin-top: 0.3rem; }
+            .full section .eight_1 dl dd span strong {
+              color: #F66060;
+              font-size: 1.5rem; }
+            .full section .eight_1 dl dd span img {
+              width: 1.5rem;
+              height: auto;
+              background: none;
+              float: right;
+              margin-right: 0.8rem; }
+  .full .shop {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.5; }
+  .full .shopp {
+    display: flex;
+    flex-direction: column;
+    display: none;
+    top: 50%;
+    width: 100%;
+    height: 60%;
+    background: none;
+    z-index: 999; }
+    .full .shopp .head {
+      width: 100%;
+      height: 3.6rem;
+      background: #eeeeee; }
+      .full .shopp .head span {
+        float: left;
+        margin-left: 1rem;
+        line-height: 3.6rem; }
+      .full .shopp .head a {
+        float: right;
+        margin-right: 1rem;
+        line-height: 3.6rem; }
+    .full .shopp .content {
+      flex: 1;
+      width: 100%;
+      height: 100%;
+      background: white; }
+      .full .shopp .content dl {
+        flex: 1;
+        width: 100%;
+        height: 5rem;
+        background: none;
+        border-bottom: 1px solid #CCCCCC;
+        display: flex;
+        flex-direction: row; }
+        .full .shopp .content dl dt {
+          width: 5rem;
+          height: 5rem;
+          background: none;
+          line-height: 5rem;
+          text-align: center; }
+          .full .shopp .content dl dt img {
+            width: 1.6rem;
+            height: 1.6rem;
+            background: none; }
+        .full .shopp .content dl dd {
+          width: 100%;
+          height: 5rem;
+          background: none; }
+          .full .shopp .content dl dd img {
+            width: 4.25rem;
+            height: 4.25rem;
+            background: none;
+            margin-top: 0.4rem;
+            float: left; }
+          .full .shopp .content dl dd span:nth-child(2) {
+            display: inline-block;
+            float: left;
+            line-height: 5rem;
+            margin-left: 1rem; }
+          .full .shopp .content dl dd span:nth-child(3) {
+            color: #FD8181;
+            float: left;
+            line-height: 5rem; }
+          .full .shopp .content dl dd span:nth-child(4) {
+            line-height: 5rem; }
+            .full .shopp .content dl dd span:nth-child(4) a {
+              float: left; }
+            .full .shopp .content dl dd span:nth-child(4) img {
+              width: 2rem;
+              height: 2rem;
+              background: none;
+              margin-top: 1.5rem; }
+    .full .shopp .foot {
+      width: 100%;
+      height: 4.6rem;
+      background: none;
+      position: relative; }
+      .full .shopp .foot img {
+        width: 4rem;
+        height: 4rem;
+        background: none;
+        position: absolute;
+        z-index: 98;
+        left: 1.8rem;
+        top: -1rem; }
+      .full .shopp .foot p {
+        display: flex;
+        flex-direction: row; }
+        .full .shopp .foot p a:nth-child(1) {
+          display: block;
+          flex: 3;
+          background: black;
+          opacity: 0.5;
+          line-height: 4.6rem;
+          color: white;
+          font-size: 1.6rem;
+          text-align: center; }
+        .full .shopp .foot p a:nth-child(2) {
+          display: block;
+          flex: 2;
+          color: white;
+          background: #ff8c50;
+          line-height: 4.6rem;
+          font-size: 1.6rem;
+          text-align: center; }

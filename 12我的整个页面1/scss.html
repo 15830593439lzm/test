@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>商品</title>
+		<!--引入css样式-->
+		<link rel="stylesheet" type="text/css" href="css1/style.css" />
+		<!--头部引入信息-->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+		<!--引入swiper  插件-->
+		<link rel="stylesheet" type="text/css" href="css1/swiper.min.css" />
+		<script type="text/javascript" src="js1/swiper.min.js"></script>
+		<!--isscroll 插件-->
+		<script type="text/javascript" src="js1/iscroll.js"></script>
+		<script type="text/javascript" src="js1/jquery-3.1.1.js"></script>
+
+	</head>
+
+	<body ng-app="myApp">
+		<div class="full">
+			<header>
+				<h3><img src="img1/nav_btn_back.png"/></h3>
+				<div>杭州西子湖四季三星级商务全国连锁</div>
+			</header>
+
+			<div class="One">
+				<dl>
+					<dt><img src="img1/sto-god-list_03.png"/></dt>
+					<dd>
+						<p>
+							<img src="img1/shop_04.jpg" />
+							<img src="img1/sto_eval_ti_08.jpg" />
+							<img src="img1/sto_eval_07.png" />
+						</p>
+						<h3>
+								<span>商品 <a>22种</a></span>
+								<span>|</span>
+								<span>起送  ¥<a>0</a> </span>
+							</h3>
+						<div class="One-right"><img src="img1/sto_eval_ti_03.png" /></div>
+
+					</dd>
+				</dl>
+			</div>
+			<div class="Two two-span">
+				<span><a href="#/computers">商品</a></span>
+				<span><a href="#/printers">详情</a></span>
+				<span><a href="#/blabla">评论</a></span>
+			</div>
+			<section id="scroll">
+				<div>
+					<!--tab切换star-->
+					
+					<div ng-view>
+
+					</div>
+					<!--第一个页面-->
+
+					<!--第二个页面-->
+
+					<!--第三个页面-->
+
+					<!--tab切换end-->
+				</div>
+			</section>
+
+			<div class="shop"></div>
+			<div class="shopp">
+				<div class="head"><span>清空</span>
+					<a>关闭</a>
+				</div>
+				<div class="content">
+					<dl>
+						<dt><img src="img1/checked-mark.png"/></dt>
+						<dd>
+							<img src="img1/alr_sign_02.png" />
+							<span>香菇肥牛味...</span>
+							<span>￥0.5</span>
+							<span><img src="img1/shop_18.png"/><a>99</a><img src="img1/shop_07.png"/></span>
+						</dd>
+					</dl>
+					<dl>
+						<dt><img src="img1/checked-mark.png"/></dt>
+						<dd>
+							<img src="img1/alr_sign_02.png" />
+							<span>香菇肥牛味...</span>
+							<span>￥0.5</span>
+							<span><img src="img1/shop_18.png"/><a>99</a><img src="img1/shop_07.png"/></span>
+						</dd>
+					</dl>
+					<dl>
+						<dt><img src="img1/checked-mark.png"/></dt>
+						<dd>
+							<img src="img1/alr_sign_02.png" />
+							<span>香菇肥牛味...</span>
+							<span>￥0.5</span>
+							<span><img src="img1/shop_18.png"/><a>99</a><img src="img1/shop_07.png"/></span>
+						</dd>
+					</dl>
+				</div>
+				<div class="foot">
+					<img src="img1/add_i_03.png" />
+					<p>
+						<a>￥65</a>
+						<a>去结算</a>
+					</p>
+				</div>
+
+			</div>
+		</div>
+	</body>
+	<!--angularjs 引入-->
+	<script src="http://cdn.static.runoob.com/libs/angular.js/1.4.6/angular.min.js"></script>
+	<script src="http://apps.bdimg.com/libs/angular-route/1.3.13/angular-route.js"></script>
+	<script type="text/javascript">
+		//			$(".shop").hide();
+		//			$(".shopp").hide();
+		//			$(".shopp").children().hide();
+		//			$("section .Four_1 dl dd span .shop_1").click(function(){
+		//				$(".shop").show();
+		//				$(".shopp").show();
+		//				$(".shopp").children().show();
+		//			})
+		//			$(".shopp .head a").click(function(){
+		//				$(".shop").hide();
+		//				$(".shopp").hide();
+		//				$(".shopp").children().hide();
+		//			})
+		//          //tab切换
+		//          $(".start").eq(0).show().siblings(".start").hide();
+		//			$(".Two span").click(function(){
+		//				var _index=$(this).index(); //console.log(_index);
+		//			    $(".start").eq(_index).show().siblings(".start").hide(200);//隐藏显示
+		//			}) 
+		//			var myscroll = new IScroll("#scroll",{   //加上scroll 下面的商品 详情  就不可以点击了
+		//		        scrollbars:true,//开启滚动条
+		//		        disableMouse:true,// 滑动中禁掉鼠标滑轮
+		//		        disablePointer:true,//是否隐藏小圆点
+		//		        scrollbars:'custom',// 自定义特殊类型分页器，当分页器类型设置为自定义时可用
+		//	        })
+
+		angular.module("myApp", ['ngRoute'])
+			.config(['$routeProvider', function($routeProvider) {
+				$routeProvider
+					.when('/computers', {
+						templateUrl: 'index1.html',
+					})
+					.when('/printers', {
+						templateUrl: 'index2.html',
+					})
+					.when('/blabla', {
+						templateUrl: 'index3.html',
+					})
+					.otherwise({ redirectTo: '/computers' });
+			}]);
+
+		var mySwiper = new Swiper('.swiper-container', {
+			slidesOffsetAfter: 100,
+			slidesPerView: 6.8,
+			slideToClickedSlide: true,
+			scrollbar: '.swiper-scrollbar',
+		})
+	</script>
+
+</html>
