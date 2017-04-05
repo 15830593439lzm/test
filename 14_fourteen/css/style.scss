@@ -1,0 +1,222 @@
+@import url("reset.css");
+@mixin whb($w,$h,$b){
+    width: $w;
+    height: $h;
+    background: $b;
+}
+@mixin box($row:row){  //column
+    display: flex;
+    flex-direction:$row;
+}
+@mixin font($val,$val2,$val3,$name){
+    .#{$name}-14{font-size:$val;color:blue;}
+    .#{$name}-18{font-size:$val2;color:red;}
+    .#{$name}-22{font-size:$val3;color:green;}
+}
+@include font(14px,18px,22px,spc);
+html{
+    font-size:62.5%;
+}
+html,body,.full{
+    @include whb(100%,100%,none);
+}
+.full{
+    @include box(column);
+    header{
+        @include whb(100%,4rem,#4194f0);
+        @include box();
+        padding: 0 1rem;
+        box-sizing: border-box;
+        .left{
+            @include whb(2.5rem,auto,#4194f0);
+            line-height: 4rem;
+            img{
+                @include whb(2rem,1.5rem,none);
+            }
+        }
+        .center{
+            flex: 1;
+            font-size: 1.6rem;
+            color: #fff;
+            line-height: 4rem;
+            text-align: center;
+        }
+        .right{
+            @include whb(2.5rem,auto,#4194f0);
+        }
+    }
+    .One{
+         @include whb(100%,7.5rem,#4194f0);
+         .One-1{
+             @include whb(auto,6.4rem,#fff);
+             margin: 0 1rem;
+             box-sizing: border-box;
+             border-radius: 0.5rem;
+             dl{
+                 @include box();
+                 dt{
+                     @include whb(5rem,auto,none);
+                     margin-top: 1.5rem;
+                     text-align: center;
+                    img{
+                        @include whb(3.65rem,3.65rem,none);
+                        
+                    }
+                }
+                 dd{
+                     flex: 1;
+                     a:nth-of-type(1){
+                         display: block;
+                         font-weight: bold;
+                         font-size: 1.6rem;
+                         margin-top: 1.5rem;
+                     }
+                     a:nth-of-type(2){
+                         display: block;
+                         color: #696969;
+                     }
+                 }
+             }
+         }
+    }
+    section{
+        flex: 1;
+        background: #f1f5f8;
+        overflow: auto;
+        &::-webkit-scrollbar{width: 0;}
+        .sect-a{
+            @include whb(100%,25.8rem,white);
+            margin-top: 1rem;
+            .sect-a-1{
+                @include box();
+                @include whb(100%,4rem,none);
+                padding: 0 1rem;
+                box-sizing: border-box;
+                border-bottom: 1px solid #CDCDCD;
+                .sect-a-1-left{
+                    @include whb(auto,2rem,none);
+                    flex: 1;
+                    font-weight: bold;
+                    font-size: 1.4rem;
+                    border-left: 3px solid #3586E1;
+                    margin-top: 1rem;
+                    padding-left: 0.3rem;
+                }
+                .sect-a-1-right{
+                    @include whb(1.4rem,25.8rem,none);
+                    img{@include whb(0.85rem,1.6rem,none);margin-top: 1.2rem;}
+                }
+            }
+            .sect-a-2{
+                @include whb(100%,5.7rem,none);
+                border-bottom: 1px solid #CDCDCD;
+                @include box();
+                padding: 0 1rem;
+                box-sizing: border-box;
+                .sect-a-2-left{
+                    @include whb(5.9rem,5.9rem,none);
+                    text-align: center;
+                    margin-top: 0.5rem;
+                    img{
+                        @include whb(4.4rem,4.4rem,none);
+                    }
+                }
+                .sect-a-2-center{
+                    flex: 1;
+                    line-height: 5.7rem;
+                }
+                .sect-a-2-right{
+                    @include whb(5.7rem,5.7rem,none);
+                    line-height: 5.7rem;
+                    a{color: #999999;}
+                    s{color: #C8C8C8;}
+                }
+            }
+            .sect-a-3{
+                @include whb(100%,4rem,none);
+                line-height: 4rem;
+                @include box();
+                .sect-a-3-left{
+                    flex: 1;
+                    color: #999999;
+                    padding-left:1.2rem;
+                }
+                .sect-a-3-right{
+                    margin-right: 1rem;
+                   @include whb(6rem,auto,none);
+                   a{color: #FE5A65;}
+                }
+            }
+        }
+        .sect-b{
+            @include whb(100%,27.7rem,white);
+            margin-top: 1rem;
+            margin-bottom: 3.5rem;
+            .sect-b-1{
+                @include whb(100%,3.85rem,none);
+                border-bottom: 1px solid #B4B4B4;
+                img{
+                    @include whb(1.3rem,1.3rem,none);
+                   margin-left: 1.3rem;
+                }
+                a{
+                    line-height: 3.85rem;
+                    padding-left: 1.5rem;
+                    font-size: 1.5rem;
+                    font-weight: bold; 
+                }
+            }
+            .sect-b-2{
+                @include whb(auto,3.6rem,none);
+                line-height: 3.6rem;
+                margin-left:1rem;
+                margin-right:1rem;
+                border-bottom: 1px solid #CDCDCD;
+                span{color: #999999;}
+            }
+            .sect-b-3{
+                @include whb(100%,3.6rem,none);
+                line-height: 3.6rem;
+                padding-left: 1rem;
+                margin-right:1rem;
+                border-bottom: 1px solid #CDCDCD;
+                span{color: #999999;}
+            }
+        }
+    }
+    footer{
+        @include whb(100%,4rem,#fff);
+        span{
+            display: inline-block;
+            @include whb(6.85rem,2.6rem,#fff);
+            border: 1px solid #DEDEDE;
+            float: right;
+            text-align: center;
+            line-height: 2.6rem;
+            margin: 0.6rem 1rem;
+        }
+        span:nth-of-type(1){
+            border: 1px solid #5a95cd;
+            color: #5a95cd;
+        }
+    }
+}
+@media screen and(min-width:375px) and(max-width:414px){
+    .full{
+        header{
+            background: deeppink;
+            .left{
+                background: deeppink;
+            }
+            .right{
+                background: deeppink;
+            }
+        }
+        .One{
+            background: deeppink;
+        }
+        footer{
+            background: deepskyblue;
+        }
+    }
+}
