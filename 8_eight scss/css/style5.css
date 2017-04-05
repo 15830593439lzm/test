@@ -1,0 +1,235 @@
+@import url("reset.css");
+html, body, .wrapper {
+  width: 100%;
+  height: 100%;
+  background: none; }
+
+.wrapper {
+  display: flex;
+  flex-direction: column; }
+  .wrapper header {
+    padding-left: 1.5rem;
+    padding-right: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    background: #4194f0; }
+    .wrapper header .header1 {
+      display: flex;
+      flex-direction: row;
+      position: relative;
+      color: #fff;
+      width: 100%;
+      height: 4rem;
+      background: none; }
+      .wrapper header .header1 .left {
+        position: absolute;
+        top: 1.2rem; }
+        .wrapper header .header1 .left img {
+          width: 2rem;
+          height: 1.8rem;
+          background: none; }
+      .wrapper header .header1 .center {
+        width: 100%;
+        height: auto;
+        background: none;
+        text-align: center;
+        line-height: 4rem;
+        font-size: 1.3rem; }
+  .wrapper section {
+    padding-bottom: 4rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    background: #f3f4f6; }
+    .wrapper section .address {
+      display: flex;
+      flex-direction: row;
+      margin-top: 0.7rem;
+      width: 100%;
+      height: 6.5rem;
+      background: #fff; }
+      .wrapper section .address textarea {
+        flex: 1;
+        border: none;
+        outline: none;
+        font-size: 1.3rem;
+        padding-left: 1rem;
+        resize: none;
+        overflow: hidden; }
+        .wrapper section .address textarea::-webkit-input-placeholder {
+          color: #cdcdcd;
+          line-height: 6.9rem; }
+      .wrapper section .address .jian {
+        width: 0.9rem;
+        height: 6.5rem;
+        background: #fff;
+        line-height: 6.5rem; }
+        .wrapper section .address .jian img {
+          width: 0.9rem;
+          height: 1.6rem;
+          background: #fff; }
+    .wrapper section .note {
+      display: flex;
+      flex-direction: row;
+      margin-top: 0.7rem;
+      width: 100%;
+      height: 3.8rem;
+      background: #fff;
+      padding-left: 1rem; }
+      .wrapper section .note p {
+        width: auto;
+        height: 3.8rem;
+        background: #fff;
+        line-height: 3.8rem;
+        color: #000; }
+      .wrapper section .note textarea {
+        flex: 1;
+        border: none;
+        outline: none;
+        font-size: 1.3rem;
+        padding-left: 1rem;
+        resize: none;
+        overflow: hidden; }
+        .wrapper section .note textarea::-webkit-input-placeholder {
+          color: #cdcdcd;
+          line-height: 3.8rem;
+          padding-left: 15rem; }
+      .wrapper section .note .jian {
+        width: 0.9rem;
+        height: 3.8rem;
+        background: #fff;
+        line-height: 3.8rem; }
+        .wrapper section .note .jian img {
+          width: 0.9rem;
+          height: 1.6rem;
+          background: #fff; }
+    .wrapper section .shoper {
+      margin-top: 1rem;
+      width: 100%;
+      height: auto;
+      background: #fff; }
+      .wrapper section .shoper .shoper-name {
+        font-weight: bold;
+        width: 100%;
+        height: 4rem;
+        background: #fff;
+        padding-left: 1rem;
+        border-top: 1px solid #ededed;
+        border-bottom: 1px solid #ededed;
+        overflow: hidden; }
+        .wrapper section .shoper .shoper-name p {
+          margin-top: 1.3rem;
+          border-left: 0.3rem solid #4194f0;
+          padding-left: 0.4rem; }
+      .wrapper section .shoper .shoper-shop {
+        padding: 0 1rem;
+        display: flex;
+        flex-direction: column; }
+        .wrapper section .shoper .shoper-shop dl {
+          width: 100%;
+          height: 5.7rem;
+          background: none;
+          display: flex;
+          flex-direction: row;
+          border-bottom: 1px solid #dedede;
+          display: flex;
+          flex-direction: row; }
+          .wrapper section .shoper .shoper-shop dl dt {
+            line-height: 5.7rem;
+            width: 4.5rem;
+            height: 4.5rem;
+            background: none; }
+            .wrapper section .shoper .shoper-shop dl dt img {
+              width: 100%;
+              height: auto;
+              background: none; }
+          .wrapper section .shoper .shoper-shop dl dd {
+            margin-left: 1rem;
+            width: 100%;
+            height: 4.4rem;
+            background: none;
+            display: flex;
+            flex-direction: row;
+            flex: 1; }
+            .wrapper section .shoper .shoper-shop dl dd .shop-name {
+              margin-top: 1.6rem;
+              line-height: 1.2rem;
+              width: 10rem;
+              height: 3rem;
+              background: none;
+              font-weight: bold; }
+            .wrapper section .shoper .shoper-shop dl dd .shop-number {
+              line-height: 5.7rem;
+              padding-left: 1.9rem;
+              color: #999999; }
+            .wrapper section .shoper .shoper-shop dl dd .shop-BeforePrice {
+              line-height: 5.7rem;
+              padding-left: 1.1rem;
+              color: #c8c8c8; }
+            .wrapper section .shoper .shoper-shop dl dd .shop-price {
+              line-height: 5.7rem;
+              padding-left: 1.3rem;
+              color: #676767;
+              font-weight: bold; }
+      .wrapper section .shoper .shoper-pay {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 4rem;
+        background: #fff;
+        line-height: 4rem;
+        padding-left: 1rem;
+        border-top: 0.1rem solid #ededed;
+        border-bottom: 0.1rem solid #ededed;
+        overflow: hidden; }
+        .wrapper section .shoper .shoper-pay .shop-price {
+          flex: 1;
+          color: #666666; }
+          .wrapper section .shoper .shoper-pay .shop-price span {
+            padding-left: 1rem; }
+        .wrapper section .shoper .shoper-pay .shop-preferential {
+          flex: 1;
+          color: #666666; }
+          .wrapper section .shoper .shoper-pay .shop-preferential span {
+            padding-left: 1rem; }
+        .wrapper section .shoper .shoper-pay .shop-pay {
+          flex: 2;
+          text-align: center;
+          color: #343434; }
+          .wrapper section .shoper .shoper-pay .shop-pay span {
+            color: #fe5a65;
+            padding-left: 1rem; }
+  .wrapper footer {
+    position: relative;
+    width: 100%;
+    height: 4.4rem;
+    background: #454648;
+    display: flex;
+    flex-direction: row;
+    color: #fff; }
+    .wrapper footer .Adress {
+      position: absolute;
+      top: -2.4rem;
+      width: 100%;
+      height: 2.4rem;
+      background: #fcaa3a;
+      padding-left: 1rem;
+      line-height: 2.4rem; }
+      .wrapper footer .Adress img {
+        width: 1.3rem;
+        height: 1.3rem;
+        background: none;
+        margin-left: 1rem;
+        margin-right: 1rem; }
+    .wrapper footer .ToPay {
+      line-height: 4.4rem;
+      padding-left: 1rem;
+      flex: 2; }
+    .wrapper footer .Pay {
+      line-height: 4.4rem;
+      flex: 1;
+      text-align: center;
+      background: #545559; }

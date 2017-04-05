@@ -1,0 +1,250 @@
+@import url("reset.css");
+@mixin full($w,$h,$g){
+    width:$w;
+    height:$h;
+    background:$g;
+}
+@mixin box($dir:row){
+   display:flex;
+   flex-direction:$dir;
+}
+html,body,.wrapper{
+    @include full(100%,100%,none);
+}
+.wrapper{
+     @include box(column);
+    header{
+        padding-left: 1.5rem;
+        padding-right: 1rem;
+        @include box(column);
+        @include full(100%,auto,#4194f0);
+        .header1{
+            @include box;
+            position: relative;
+            color: #fff;
+            @include full(100%,4rem,none);
+            .left{
+                position: absolute;
+                top:1.2rem;
+                img{
+                   @include full(2rem,1.8rem,none);
+                }
+            }
+            .center{
+                @include full(100%,auto,none);
+                text-align: center;
+                line-height: 4rem;
+                font-size: 1.3rem;
+            }
+        }
+        
+    }
+    section{
+        padding-bottom: 4rem;
+        flex: 1;
+        @include box(column);
+        overflow-y:auto;
+        background: #f3f4f6;
+        .address{
+            @include box;
+            margin-top: 0.7rem;
+            @include full(100%,6.5rem,#fff);
+//          border-image: url() 0.2rem 0.2rem 0.2rem rounded;
+//          -webkit-border-image:url(../img/images4/images/as_bottom.png) 30 30 round;
+            textarea{
+                flex: 1;
+                border: none;
+                outline: none;
+                font-size: 1.3rem;
+                padding-left: 1rem;
+                resize: none;
+                overflow:hidden; 
+                &::-webkit-input-placeholder{
+                      color:#cdcdcd;
+
+                      line-height: 6.9rem;
+                }
+            }
+            .jian{
+                    @include full(0.9rem,6.5rem,#fff);
+                    line-height: 6.5rem;
+                img{
+                    @include full(0.9rem,1.6rem,#fff);
+                    
+                }
+            }
+        }
+        .note{
+            @include box;
+            margin-top: 0.7rem;
+            @include full(100%,3.8rem,#fff);
+            padding-left: 1rem;
+            p{
+                @include full(auto,3.8rem,#fff);
+                line-height: 3.8rem;
+                color: #000;
+            }
+            textarea{
+                flex: 1;
+                border: none;
+                outline: none;
+                font-size: 1.3rem;
+                padding-left: 1rem;
+                resize: none;
+                overflow:hidden; 
+                &::-webkit-input-placeholder{
+                      color:#cdcdcd;
+                      line-height: 3.8rem;
+                      padding-left: 15rem;
+                }
+            }
+            .jian{
+                    @include full(0.9rem,3.8rem,#fff);
+                    line-height: 3.8rem;
+                img{
+                    @include full(0.9rem,1.6rem,#fff);
+                    
+                }
+            }
+        }
+        .shoper{
+            margin-top: 1rem;
+            @include full(100%,auto,#fff);
+            .shoper-name{
+                font-weight: bold;
+                @include full(100%,4rem,#fff);
+                padding-left: 1rem;
+                border-top: 1px solid #ededed;
+                border-bottom: 1px solid #ededed;
+                overflow: hidden;
+                p{
+                    margin-top: 1.3rem;
+                    border-left: 0.3rem solid #4194f0;
+                    padding-left: 0.4rem;
+                }
+            }
+            .shoper-shop{
+                padding: 0 1rem;
+                    @include box(column);
+                dl{
+                    @include full(100%,5.7rem,none);
+
+                    @include box;
+                    border-bottom: 1px solid #dedede;
+//                  padding: 0.7rem 0;
+                    @include box;
+                    dt{
+                    line-height: 5.7rem;
+                        
+                         @include full(4.5rem,4.5rem,none);
+                        img{
+                            @include full(100%,auto,none);
+                        }
+                    }
+                    dd{
+                        margin-left: 1rem;
+                        @include full(100%,4.4rem,none);
+//                      margin-top: 1rem;
+//                      line-height: 4.4rem;
+                        @include box;
+                        flex: 1;
+                        .shop-name{
+                            margin-top: 1.6rem;
+                            line-height: 1.2rem;
+                            @include full(10rem,3rem,none);
+                            font-weight: bold;
+                        }
+                        .shop-number{
+                            line-height: 5.7rem;
+                            padding-left: 1.9rem;
+                            color: #999999;
+                        }
+                        .shop-BeforePrice{
+                            line-height: 5.7rem;
+                            padding-left: 1.1rem;
+                            color: #c8c8c8;
+                            
+                        }
+                        .shop-price{
+                            line-height: 5.7rem;
+                            padding-left: 1.3rem;
+                            color: #676767;
+                            font-weight: bold;
+                            
+                        }
+                    }
+                }
+            }
+            .shoper-pay{
+                @include box;
+                @include full(100%,4rem,#fff);
+                line-height: 4rem;
+                padding-left: 1rem;
+                border-top: 0.1rem solid #ededed;
+                border-bottom: 0.1rem solid #ededed;
+                overflow: hidden;
+                .shop-price{
+                    flex: 1;
+                    color: #666666;
+                    span{
+                        padding-left: 1rem;
+                    }
+                }
+                .shop-preferential{
+                    flex: 1;
+                    
+//                  margin-left: 1.3rem;
+                     color: #666666;
+                    span{
+                        padding-left: 1rem;
+                    }
+                }
+                .shop-pay{
+                    flex: 2;
+                    text-align: center;
+                    
+//                  padding-left: 5rem;
+                     color: #343434;
+                    span{
+                        color: #fe5a65;
+                        padding-left: 1rem;
+                    }
+                }
+            }
+            
+        }
+    }
+    footer{
+        position: relative;
+        @include full(100%,4.4rem,#454648);
+        
+        @include box;
+        color: #fff;
+        
+        .Adress{
+            img{
+               @include full(1.3rem,1.3rem,none);
+              margin-left: 1rem;
+              margin-right: 1rem;
+            }
+            position:absolute;
+            top: -2.4rem;
+            @include full(100%,2.4rem,#fcaa3a);
+            padding-left: 1rem;
+            line-height: 2.4rem;
+            
+        }
+        .ToPay{
+            line-height: 4.4rem;
+            padding-left: 1rem;
+            flex: 2;
+            
+        }
+        .Pay{
+            line-height: 4.4rem;
+            flex: 1;
+            text-align: center;
+            background: #545559;
+        }
+    }
+}
