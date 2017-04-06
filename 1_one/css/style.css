@@ -1,0 +1,111 @@
+@import url("reset.css");
+.a {
+  position: absolute;
+}
+.r {
+  position: relative;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body,
+.all {
+  width: 100%;
+  height: 100%;
+  background: none;
+}
+.all {
+  display: -webkit-box;
+  display: -moz-box;
+  -webkit-box-orient: vertical;
+}
+.all header {
+  width: 100%;
+  height: 4rem;
+  background: #ff7417;
+  display: -webkit-box;
+  display: -moz-box;
+  -webkit-box-orient: horizontal;
+  line-height: 4rem;
+  text-align: center;
+}
+.all header .left,
+.all header .right {
+  width: 3rem;
+  height: 3rem;
+  background: none;
+}
+.all header .left img,
+.all header .right img {
+  width: 1.9rem;
+  height: 1.5rem;
+  margin-top: 1.3rem;
+}
+.all header .center {
+  -webkit-box-flex: 1;
+  font-weight: bold;
+  color: white;
+  font-size: 15px;
+}
+.all section {
+  overflow-y: auto;
+  -webkit-box-flex: 1;
+}
+.all section::-webkit-scrollbar {
+  width: 0;
+}
+.all section .Top {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+.all section .Top img {
+  width: 100%;
+  height: auto;
+  background: none;
+}
+.all section .Top .swiper-pagination {
+  position: absolute;
+}
+.all section .bottom {
+  padding: 0 15px 5px;
+  display: -webkit-box;
+  display: -moz-box;
+  -webkit-box-orient: horizontal;
+}
+.all section .bottom dl {
+  -webkit-box-flex: 1;
+  text-align: center;
+  color: red;
+}
+.all section .bottom dl img {
+  width: 5rem;
+  height: 5rem;
+  background: none;
+}
+.all footer {
+  width: 100%;
+  height: 4rem;
+  background: #ff7417;
+  display: -webkit-box;
+  display: -moz-box;
+  -webkit-box-orient: horizontal;
+}
+.all footer dl {
+  -webkit-box-flex: 1;
+  line-height: 1.2rem;
+  text-align: center;
+  color: white;
+  font-size: 10px;
+  width: 0px;
+}
+.all footer dl img {
+  width: 2.1rem;
+  height: 1.8rem;
+  background: none;
+  margin-top: 7px;
+}
+.all footer dl:hover {
+  background: linear-gradient(to bottom, #ff7f11, #ff9b03);
+}

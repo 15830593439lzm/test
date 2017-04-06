@@ -1,0 +1,104 @@
+@import url("reset.css"); //封装//
+.whb(@w, @h, @b) {
+    width: @w;
+    height: @h;
+    background: @b;
+}
+//公共样式 start//
+
+.box(@dir:vertical) { //垂直排列
+    display: -webkit-box;
+    display: -moz-box;
+    -webkit-box-orient: @dir;
+}
+.a{
+    position: absolute;
+}
+.r{
+    position: relative;
+}
+html {
+    font-size: 62.5%;
+}
+html,
+body,
+.all {
+    .whb(100%,100%,none); //直接调用宽高百分百
+}
+//公共样式 end//
+.all {
+    .box(); //成为弹性盒
+    header {
+        //  overflow: auto;//超出隐藏
+        .whb(100%,4rem,#ff7417);
+        .box(horizontal); //水平排列
+        line-height: 4rem;
+        text-align: center;
+        .left,.right {
+            .whb(3rem,3rem,none);
+            img{
+                width: 1.9rem;
+                height: 1.5rem;
+                margin-top: 1.3rem;
+            }
+        }
+        .center {
+            -webkit-box-flex: 1;
+            font-weight: bold;
+            color: white;
+            font-size: 15px;
+        }
+    }
+    section {
+        //中间内容
+        overflow-y: auto;
+        &::-webkit-scrollbar{width: 0;}//滚动条宽为0
+        //  overflow: scroll;//出现滚动条
+        -webkit-box-flex: 1; //占据剩下的所有
+        //轮播图
+        .Top{
+            .r;
+            overflow: hidden;
+            margin-bottom: 10px;
+            img{
+                .whb(100%,auto,none);
+            }
+            .swiper-pagination{
+                .a;
+            }
+        }
+        .bottom{
+            padding: 0 15px 5px;
+            .box(horizontal);
+            dl{
+                -webkit-box-flex: 1;
+                text-align: center;
+                color: red;
+                img{
+                    .whb(5rem,5rem,none);
+                }
+            }
+        }
+    }
+    footer {
+        .whb(100%,4rem,#ff7417);
+        .box(horizontal);
+        dl{
+            -webkit-box-flex: 1;
+            line-height: 1.2rem;
+            text-align: center;
+            color: white;
+            font-size: 10px;
+            width: 0px;
+            img{
+                .whb(2.1rem,1.8rem,none);
+                margin-top: 7px;
+            }
+        }
+    }
+    footer dl:hover{
+        background: linear-gradient(to bottom,#ff7f11,#ff9b03);
+    }
+}
+//弹性盒
+//弹性盒
